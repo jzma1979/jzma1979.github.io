@@ -117,6 +117,16 @@ rimoterm vk, rimoterm single, rimoterm multi
     <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80 u-footer" id="sec-d007"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <p class="u-align-center u-small-text u-text u-text-variant u-text-1" data-lang-en="​Copyright © Pyroland d.o.o - Beograd. Sva prava zadržana.&amp;nbsp; All rights reserved.&amp;nbsp;" data-lang-sr="​Copyright © Pyroland d.o.o - Beograd. Sva prava zadržana.&amp;nbsp; All rights reserved.&amp;nbsp;"> Copyright © Pyroland d.o.o - Beograd. Sva prava zadržana.&nbsp; All rights reserved.&nbsp;</p>
       </div></footer>
-    
+    <script>
+        window.addEventListener('pageshow', function(event) {
+            if (event.persisted) {
+                // Close the hamburger menu if it's open
+                var menu = document.getElementById('menu-hamburger'); // Replace 'hamburgerMenu' with the actual ID or class
+                if (menu.classList.contains('open')) {
+                    menu.classList.remove('open');
+                }
+            }
+        });
+        </script>
   
 </body></html>
